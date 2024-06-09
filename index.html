@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculador de gasto</title>
+</head>
+
+<body>
+    <h1>Calculador de Gastos</h1>
+    <div>
+        <label for="nombre">Nombre del Gasto:</label>
+        <input type="text" id="nombre" required>
+    </div>
+    <div>
+        <label for="monto">Monto del Gasto:</label>
+        <input type="number" id="monto" required>
+    </div>
+    <button onclick="agregarGasto()">Agregar Gasto</button>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    
+    <h2>Lista de Gastos</h2>
+    <ul id="listaGastos"></ul>
+    
+    <h2>Total de Gastos</h2>
+    <p id="totalGastos">$0</p>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
