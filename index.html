@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Calculador de gasto</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <h1>Calculador de Gastos</h1>
+    <h1>Gestor de Gastos</h1>
     <div>
         <label for="nombre">Nombre del Gasto:</label>
         <input type="text" id="nombre" required>
@@ -19,6 +20,7 @@
         <input type="number" id="monto" required>
     </div>
     <button onclick="agregarGasto()">Agregar Gasto</button>
+    <button onclick="mostrarGastos()">Mostrar Gastos</button>
     <button onclick="calcularTotal()">Calcular Total</button>
     
     <h2>Lista de Gastos</h2>
